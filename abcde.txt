@@ -1,0 +1,42 @@
+package f_encapsulation;
+ 
+public class Employee {
+	private int emp_id;    
+    private String name;
+    private int age;
+    
+	public void setEmpId(int emp_id1) {
+		emp_id = emp_id1;
+	}
+
+	public int getEmpId() {
+		return emp_id;
+
+	}
+    public void setName(String name1) {
+    	name=name1;
+    	
+    }
+    public String getName() {
+    	return name;
+    }
+    public void setAge(int age1) {
+    	age=age1;
+    	
+    }
+    public int getAge() {
+    	return age;
+    }
+ 
+	public static void main(String[] args) {
+		
+      Employee e=new Employee();
+      e.setEmpId(1);
+      e.setName("Micro");
+      e.setAge(10);
+      System.out.println(e.getEmpId());
+      System.out.println(e.getName());
+      System.out.println(e.getAge());
+	}
+
+}
